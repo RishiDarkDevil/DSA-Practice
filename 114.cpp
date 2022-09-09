@@ -5,7 +5,7 @@ using namespace std;
 
 void dfs(int i, int j, int init, int color, vector<vector<int>> &image, vector<vector<bool>> &visited) {
 	if (i < 0 || j < 0) return;
-	if (i >= image.size() || i >= image[0].size()) return;
+	if (i >= image.size() || j >= image[0].size()) return;
 	if (image[i][j] != init) return;
 	if (visited[i][j]) return;
 
